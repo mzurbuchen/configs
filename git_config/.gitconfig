@@ -46,10 +46,10 @@
     ignored = !git ls-files -v | grep \"^S\"
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit 
 [user]
-	name = mzurbuchen
-    email = zurbuchen@puzzle.ch
+  name = YOUR-NAME
+  email = YOUR-EMAIL
 [core]
-    excludesfile = /home/mzurbuchen/.gitignore
+    excludesfile = /home/YOUR-NAME/.gitignore
 	  editor = vim
 [credential]
 	helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
