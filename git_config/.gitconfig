@@ -1,0 +1,55 @@
+[push]
+    default = matching
+[color]
+    ui = auto
+[interactive]
+    singlekey = true
+[alias]
+    a = add --all
+    all = add --all
+    co = checkout
+    com = checkout master
+    ci = commit
+    ca = commit --amend
+    cm = commit -m
+    cl = clone
+    cp = cherry-pick
+    d = diff
+    f = fetch
+    gp = grep -p
+    l = log
+    m = merge
+    ps = push
+    psom = push origin master
+    pl = pull
+    plom = pull origin master
+    st = status
+    all = add --all
+    br = branch
+    rebase = pull --rebase
+    rb = pull --rebase
+    rbc = rebase --continue
+    rbh = !"f() { NUMBER=$1; git rebase -i HEAD~$NUMBER; }; f"
+    up = pull --rebase
+    type = cat-file t
+    dump = cat-file -p
+    rs = reset
+    rh = reset HEAD^
+    rhd = reset --hard
+    coa = checkout -- .
+    rshhd = reset HEAD^ --hard
+    rv = remote -v
+    cb = checkout -b
+    db = branch -D
+    ignore = update-index --skip-worktree
+    unignore = update-index --no-skip-worktree
+    ignored = !git ls-files -v | grep \"^S\"
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit 
+[user]
+	name = mzurbuchen
+    email = zurbuchen@puzzle.ch
+[core]
+    excludesfile = /home/mzurbuchen/.gitignore
+	  editor = vim
+[credential]
+	helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
