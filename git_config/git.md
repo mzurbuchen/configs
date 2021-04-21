@@ -26,8 +26,15 @@ Email-Adresse setzen
 
 ### Befehle ohne Abkürzungen
 
-git add -p
 Die geänderten Zeilen können mit y (yes) und n (no) zur Staging-Umgebung hinzugefügt werden.
+
+`git add -p`
+
+---
+
+Bei Cherry-Pick, Merge oder Rebase Konflikt den Vorgang mit --abort abbrechen.
+
+`git cp --abort`
 
 ### Abkürzungen von Git Config
 
