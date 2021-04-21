@@ -2,74 +2,74 @@
 
 ## Git Befehle
 
-all (add --all)
+all (*add --all*)
 
-coa (checkout -- .)
+coa (*checkout -- .*)
 
-co (checkout)
+co (*checkout*)
 
-com (checkout master)
+com (*checkout master*)
 
-ct (commit)
+ct (*commit*)
 
-ca (commit --amend)
+ca (*commit --amend*)
 
-cm (commit -m)
+cm (*commit -m*)
 
-cl (clone)
+cl (*clone*)
 
-cp (cherry-pick)
+cp (*cherry-pick*)
 
-d (diff)
+d (*diff*)
 
-f (fetch)
+f (*fetch*)
 
-gp (grep -p)
+gp (*grep -p*)
 
-l (log)
+l (*log*)
 
-m (merge)
+m (*merge*)
 
-ps (push)
+ps (*push*)
 
-psom (push origin master)
+psom (*push origin master*)
 
-pl (pull)
+pl (*pull*)
 
-plom (pull origin master)
+plom (*pull origin master*)
 
-st (status)
+st (*status*)
 
-br (branch)
+br (*branch*)
 
-rebase (pull --rebase)
+rebase (*pull --rebase*)
 
-rb (pull --rebase)
+rb (*pull --rebase*)
 
-rbc (rebase --continue)
+rbc (*rebase --continue*)
 
-rbh (!"f() { NUMBER=$1; git rebase -i HEAD~$NUMBER; }; f")
+rbh (*!"f() { NUMBER=$1; git rebase -i HEAD~$NUMBER; }; f"*)
 
-up (pull --rebase)
+up (*pull --rebase*)
 
-rs (reset)
+rs (*reset*)
 
-reset_head (reset HEAD^)
+reset_head (*reset HEAD^*)
 
-reset_hard (reset --hard)
+reset_hard (*reset --hard*)
 
-reset_commit (reset HEAD^ --hard)
+reset_commit (*reset HEAD^ --hard*)
     
-rv (remote -v)
+rv (*remote -v*)
 
-cb (checkout -b)
+cb (*checkout -b*)
 
-db (branch -D)
+db (*branch -D*)
 
-ignore (update-index --skip-worktree)
+ignore (*update-index --skip-worktree*)
 
-unignore (update-index --no-skip-worktree)
+unignore (*update-index --no-skip-worktree*)
 
-ignored (!git ls-files -v | grep \"^S\")
+ignored (*!git ls-files -v | grep \"^S\"*)
 
-lg (log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit)
+lg (*log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit*)
