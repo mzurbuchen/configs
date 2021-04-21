@@ -1,3 +1,75 @@
 # Git Dokumentation
 
-Befehle
+## Git Befehle
+
+all (add --all)
+
+coa (checkout -- .)
+
+co (checkout)
+
+com (checkout master)
+
+ct (commit)
+
+ca (commit --amend)
+
+cm (commit -m)
+
+cl (clone)
+
+cp (cherry-pick)
+
+d (diff)
+
+f (fetch)
+
+gp (grep -p)
+
+l (log)
+
+m (merge)
+
+ps (push)
+
+psom (push origin master)
+
+pl (pull)
+
+plom (pull origin master)
+
+st (status)
+
+br (branch)
+
+rebase (pull --rebase)
+
+rb (pull --rebase)
+
+rbc (rebase --continue)
+
+rbh (!"f() { NUMBER=$1; git rebase -i HEAD~$NUMBER; }; f")
+
+up (pull --rebase)
+
+rs (reset)
+
+reset_head (reset HEAD^)
+
+reset_hard (reset --hard)
+
+reset_commit (reset HEAD^ --hard)
+    
+rv (remote -v)
+
+cb (checkout -b)
+
+db (branch -D)
+
+ignore (update-index --skip-worktree)
+
+unignore (update-index --no-skip-worktree)
+
+ignored (!git ls-files -v | grep \"^S\")
+
+lg (log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit)
