@@ -36,6 +36,12 @@ Bei Cherry-Pick, Merge oder Rebase Konflikt den Vorgang mit --abort abbrechen.
 
 `git cp --abort`
 
+---
+
+Remote Git Repository ändern
+
+`git remote set-url origin https://github.com/YOUR-NAME/YOUR-PROJECT.git`
+
 ### Abkürzungen von Git Config
 
 all (*add --all*)
