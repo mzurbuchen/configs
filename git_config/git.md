@@ -2,7 +2,17 @@
 
 ## Git installieren und einrichten
 
-TODO
+Git installieren
+
+`sudo apt install git`
+
+Benutzername setzen
+
+`git config --global user.name "YOUR-NAME"`
+
+Email-Adresse setzen
+
+`git config --global user.email "YOUR-EMAIL"`
 
 ## Abläufe
 
