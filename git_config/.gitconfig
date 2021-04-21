@@ -1,15 +1,18 @@
 [push]
+    # Pushes your local branch to the remote branch with the same name
     default = matching
 [color]
+    # Activates colorful output
     ui = auto
 [interactive]
+    # Provides one letter input without hitting enter
     singlekey = true
 [alias]
-    a = add --all
     all = add --all
+    coa = checkout -- .
     co = checkout
     com = checkout master
-    ci = commit
+    ct = commit
     ca = commit --amend
     cm = commit -m
     cl = clone
@@ -24,20 +27,16 @@
     pl = pull
     plom = pull origin master
     st = status
-    all = add --all
     br = branch
     rebase = pull --rebase
     rb = pull --rebase
     rbc = rebase --continue
     rbh = !"f() { NUMBER=$1; git rebase -i HEAD~$NUMBER; }; f"
     up = pull --rebase
-    type = cat-file t
-    dump = cat-file -p
     rs = reset
-    rh = reset HEAD^
-    rhd = reset --hard
-    coa = checkout -- .
-    rshhd = reset HEAD^ --hard
+    reset_head = reset HEAD^
+    reset_hard = reset --hard
+    reset_commit = reset HEAD^ --hard
     rv = remote -v
     cb = checkout -b
     db = branch -D
@@ -46,10 +45,12 @@
     ignored = !git ls-files -v | grep \"^S\"
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit 
 [user]
+  # Saves name and email
   name = YOUR-NAME
   email = YOUR-EMAIL
 [core]
-    excludesfile = /home/YOUR-NAME/.gitignore
-	  editor = vim
+  # Git looks into this file for patterns which shouldn't be tracked
+  excludesfile = /home/YOUR-NAME/.gitignore
+  editor = vim
 [credential]
-	helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
+  helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
