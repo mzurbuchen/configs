@@ -34,9 +34,9 @@
     rbh = !"f() { NUMBER=$1; git rebase -i HEAD~$NUMBER; }; f"
     up = pull --rebase
     rs = reset
-    reset_head = reset HEAD^
-    reset_hard = reset --hard
-    reset_commit = reset HEAD^ --hard
+    reset-head = reset HEAD^
+    reset-hard = reset --hard
+    reset-commit = reset HEAD^ --hard
     rv = remote -v
     cb = checkout -b
     db = branch -D
