@@ -14,6 +14,10 @@ Email-Adresse setzen
 
 `git config --global user.email "YOUR-EMAIL"`
 
+### Git Credentials speichern
+
+[Hier]([https://link-url-here.org](https://polodev.github.io/learning/bits/how-to-store-git-credential-in-ubuntu-linux-using-libsecret/)) findest du eine Anleitung, wie du in Ubuntu die Git Credentials lokal speichern kannst.
+
 ## Abläufe
 
 ### Alle Lokalen Änderungen auf Github/Gitlab pushen.
