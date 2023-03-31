@@ -16,7 +16,7 @@ Email-Adresse setzen
 
 ### Git Credentials speichern
 
-[Hier]([https://link-url-here.org](https://polodev.github.io/learning/bits/how-to-store-git-credential-in-ubuntu-linux-using-libsecret/)) findest du eine Anleitung, wie du in Ubuntu die Git Credentials lokal speichern kannst.
+[Hier](https://polodev.github.io/learning/bits/how-to-store-git-credential-in-ubuntu-linux-using-libsecret/) findest du eine Anleitung, wie du in Ubuntu die Git Credentials lokal speichern kannst.
 
 ## Abläufe
 
