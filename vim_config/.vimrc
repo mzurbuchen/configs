@@ -1,2 +1,2 @@
-# Zeilennummern immer anzeigen
+" Zeilennummern immer anzeigen
 set number
