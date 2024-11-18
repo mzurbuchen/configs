@@ -6,6 +6,10 @@ Git installieren
 
 `sudo apt install git`
 
+Allowed Signers File erstellen um 'Verified' Git Commits einzurichten
+
+`echo "$(git config --get user.email) namespaces=\"git\" $(cat ~/.ssh/id_ed25519.pub)" >> ~/.ssh/allowed_signers`
+
 Benutzername setzen
 
 `git config --global user.name "YOUR-NAME"`
@@ -14,7 +18,19 @@ Email-Adresse setzen
 
 `git config --global user.email "YOUR-EMAIL"`
 
-### Git Credentials speichern
+Pfad zu deinem SSH Public Key setzen
+
+`git config --global user.signingkey $HOME/.ssh/id_ed25519.pub`
+
+Pfad zu deinem Gitignore-File setzen
+
+`git config --global core.excludesfile $HOME/.gitignore`
+
+Pfad zu deinem SSH-Allowed-Signers-File setzen
+
+`git config --global gpg.ssh.allowedSignersFile $HOME/.ssh/allowed_signers`
+
+### Git Credentials für Option HTTPS speichern
 
 [Hier](https://polodev.github.io/learning/bits/how-to-store-git-credential-in-ubuntu-linux-using-libsecret/) findest du eine Anleitung, wie du in Ubuntu die Git Credentials lokal speichern kannst.
 
