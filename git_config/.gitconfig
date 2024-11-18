@@ -24,8 +24,10 @@
     m = merge
     ps = push
     psom = push origin master
+    psod = push origin develop
     pl = pull
     plom = pull origin master
+    plod = pull origin develop
     st = status
     br = branch
     rebase = pull --rebase
@@ -33,10 +35,15 @@
     rbc = rebase --continue
     rbh = !"f() { NUMBER=$1; git rebase -i HEAD~$NUMBER; }; f"
     up = pull --rebase
+    ch = checkout HEAD --
+    checkout-head = checkout HEAD --
     rs = reset
     reset-head = reset HEAD^
+    rhe = reset HEAD^
     reset-hard = reset --hard
+    rha = reset --hard
     reset-commit = reset HEAD^ --hard
+    rhh = reset HEAD^ --hard
     rv = remote -v
     cb = checkout -b
     db = branch -D
@@ -48,9 +55,17 @@
   # Saves name and email
   name = YOUR-NAME
   email = YOUR-EMAIL
+  signingkey = YOUR-PUBLIC-KEY-PATH
 [core]
   # Git looks into this file for patterns which shouldn't be tracked
-  excludesfile = /home/YOUR-NAME/.gitignore
+  excludesfile = YOUR-GITIGNORE-PATH
   editor = vim
-[credential]
-  helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
+# To verify the git commits  
+[commit]
+  gpgsign = true
+[tag]
+  gpgsign = true
+[gpg]
+  format = ssh
+[gpg "ssh"]
+  allowedSignersFile = YOUR-SSH-ALLOWED-SIGNERS-PATH
